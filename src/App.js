@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import AiForRecruitment from './components/Projects/AiForRecruitment'
+import DigitalizationForAgribusiness from './components/Projects/DigitalizationForAgribusiness'
 import './App.css'
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
               </>
             } />
             <Route path="/ai-for-recruitment" element={<AiForRecruitment />} />
+            <Route path="/digitalization-for-agribusiness" element={<DigitalizationForAgribusiness />} />
           </Routes>
         </main>
         <ScrollToTop />

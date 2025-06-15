@@ -3,7 +3,7 @@ import AiForRecruitment from './images/beyond.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://elserida.com',
+  homepage: 'localhost:3000',
   title: 'EQN',
 }
 
@@ -38,7 +38,7 @@ const projects = [
       'Empower farmers through digital market access. Conducted market analysis, designed digital solutions using WhatsApp Business API and C-Commerce, developed user journey, cost-benefit analysis, operational blueprint, and proposed a centralized model for transactions.',
     stack: ['Business Analysis', 'Product Strategy', 'WhatsApp API', 'C-Commerce'],
     sourceCode: '',
-    livePreview: '',
+    livePreview: '/digitalization-for-agribusiness',
   },
   {
     name: 'Desk Collection Subscription',
