@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
@@ -10,33 +10,32 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import AiForRecruitment from './components/Projects/AiForRecruitment'
 import DigitalizationForAgribusiness from './components/Projects/DigitalizationForAgribusiness'
+import ScrollToSection from './components/ScrollToSection/ScrollToSection'
 import './App.css'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
 
   return (
-    <Router>
-      <div id='top' className={`${themeName} app`}>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={
-              <>
-                <About />
-                <Projects />
-                <Skills />
-                <Contact />
-              </>
-            } />
-            <Route path="/ai-for-recruitment" element={<AiForRecruitment />} />
-            <Route path="/digitalization-for-agribusiness" element={<DigitalizationForAgribusiness />} />
-          </Routes>
-        </main>
-        <ScrollToTop />
-        <Footer />
-      </div>
-    </Router>
+    <div id='top' className={`${themeName} app`}>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={
+            <ScrollToSection>
+              <About />
+              <Projects />
+              <Skills />
+              <Contact />
+            </ScrollToSection>
+          } />
+          <Route path="/ai-for-recruitment" element={<AiForRecruitment />} />
+          <Route path="/digitalization-for-agribusiness" element={<DigitalizationForAgribusiness />} />
+        </Routes>
+      </main>
+      <ScrollToTop />
+      <Footer />
+    </div>
   )
 }
 

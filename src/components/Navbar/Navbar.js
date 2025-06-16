@@ -1,3 +1,4 @@
+import { Link, useNavigate } from 'react-router-dom'
 import { useContext, useState } from 'react'
 import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
@@ -10,8 +11,15 @@ import './Navbar.css'
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
+  const navigate = useNavigate()
 
   const toggleNavList = () => setShowNavList(!showNavList)
+
+  const handleNavClick = (sectionId, e) => {
+    e.preventDefault()
+    setShowNavList(false)
+    navigate('/', { state: { scrollTo: sectionId } })
+  }
 
   return (
     <nav className='center nav'>
@@ -21,37 +29,37 @@ const Navbar = () => {
       >
         {projects.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={toggleNavList}
+            <Link
+              to='/'
+              onClick={(e) => handleNavClick('projects', e)}
               className='link link--nav'
             >
               Projects
-            </a>
+            </Link>
           </li>
         ) : null}
 
         {skills.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#skills'
-              onClick={toggleNavList}
+            <Link
+              to='/'
+              onClick={(e) => handleNavClick('skills', e)}
               className='link link--nav'
             >
               Skills
-            </a>
+            </Link>
           </li>
         ) : null}
 
         {contact.email ? (
           <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={toggleNavList}
+            <Link
+              to='/'
+              onClick={(e) => handleNavClick('contact', e)}
               className='link link--nav'
             >
               Contact
-            </a>
+            </Link>
           </li>
         ) : null}
       </ul>
