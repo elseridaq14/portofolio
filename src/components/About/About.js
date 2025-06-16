@@ -34,9 +34,9 @@ const About = () => {
 
         {social && (
           <>
-            {social.whatsapp && (
+            {social.Whatsapp && (
               <a
-                href={social.whatsapp}
+                href={social.Whatsapp}
                 aria-label='Whatsapp'
                 className='link link--icon'
               >

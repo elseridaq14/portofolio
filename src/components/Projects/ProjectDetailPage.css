@@ -94,6 +94,18 @@
   display: block;
 }
 
+.slide-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+  text-align: left; /* Adjust if needed to align with text */
+}
+
+.slide-content li {
+  margin-bottom: 8px;
+  color: #000;
+}
+
 @media (max-width: 600px) {
   .project-detail-container {
     padding: 16px;
