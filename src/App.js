@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer'
 import AiForRecruitment from './components/Projects/AiForRecruitment'
 import DigitalizationForAgribusiness from './components/Projects/DigitalizationForAgribusiness'
 import ScrollToSection from './components/ScrollToSection/ScrollToSection'
+import Cybersecurity from './components/Projects/Cybersecurity'
 import './App.css'
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           } />
           <Route path="/ai-for-recruitment" element={<AiForRecruitment />} />
           <Route path="/digitalization-for-agribusiness" element={<DigitalizationForAgribusiness />} />
+          <Route path="/cybersecurity-product-development" element={<Cybersecurity />} />
         </Routes>
       </main>
       <ScrollToTop />

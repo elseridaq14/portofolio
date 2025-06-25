@@ -1,5 +1,4 @@
 import profile from './images/profile.png'
-import AiForRecruitment from './images/beyond.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -26,35 +25,26 @@ const projects = [
   {
     name: 'AI for Recruitment',
     description:
-      'Automate end-to-end recruitment journey. Identified pain points, conducted market segmentation, created business model, generated revenue projections, evaluated system blueprint, developed go-to-market strategy, and built interactive mockups.',
-    stack: ['Business Analysis', 'Product Strategy', 'UI/UX', 'Mockup'],
+      'Designed a recruitment solution leveraging AI for candidate assessment, built to support companies in evaluating talent efficiently and objectively through automated workflows.',
+    stack: ['Business Analysis', 'Product Strategy'],
     sourceCode: '',
     livePreview: '/ai-for-recruitment',
-    photo: AiForRecruitment,
   },
   {
     name: 'Digitalization for Agribusiness',
     description:
       'Empower farmers through digital market access. Conducted market analysis, designed digital solutions using WhatsApp Business API and C-Commerce, developed user journey, cost-benefit analysis, operational blueprint, and proposed a centralized model for transactions.',
-    stack: ['Business Analysis', 'Product Strategy', 'WhatsApp API', 'C-Commerce'],
+    stack: ['Business Analysis', 'Product Strategy'],
     sourceCode: '',
     livePreview: '/digitalization-for-agribusiness',
   },
   {
-    name: 'Desk Collection Subscription',
-    description:
-      'Evaluate feasibility of a subscription-based debt collection solution. Conducted valuation, designed business model, simulated financial projection, reviewed blueprint, and crafted go-to-market strategy.',
-    stack: ['Business Analysis', 'Financial Analysis', 'Subscription Model'],
-    sourceCode: '',
-    livePreview: '',
-  },
-  {
     name: 'Cybersecurity Product Development',
     description:
-      'Develop and launch a suite of cybersecurity services. Conducted market analysis, researched competitive landscape, developed business model, designed blueprint, defined go-to-market strategy, and collaborated with teams for digital assets.',
-    stack: ['Business Analysis', 'Product Development', 'Digital Marketing', 'Cybersecurity'],
+      'The initiative aimed to design, validate, and launch a comprehensive suite of cybersecurity services tailored to enterprise clients in Indonesia. This project covered the full lifecycle from strategic research to execution and brand launch.',
+    stack: ['Business Analysis', 'Product Development', 'Digital Marketing'],
     sourceCode: '',
-    livePreview: '',
+    livePreview: '/cybersecurity-product-development',
   },
 ]
 

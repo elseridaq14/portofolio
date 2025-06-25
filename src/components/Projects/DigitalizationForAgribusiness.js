@@ -3,10 +3,10 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 // Import gambar jika ada, atau gunakan placeholder
-import placeholderImg from '../../images/profile.png' // Contoh placeholder, ganti dengan gambar relevan
 import './ProjectDetailPage.css'
+import podang from '../../images/digital.jpeg'
 
-const DigitalizationForAgribusiness = () => {
+const Digitalization = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -19,9 +19,10 @@ const DigitalizationForAgribusiness = () => {
 
   return (
     <div className="project-detail-container">
-      <h1>Digitalization for Agribusiness</h1>
+      <h1>C-Commerce for Agribusiness</h1>
       <h3>Business Analyst | Product Strategist</h3>
-      <h4>Objective: Empower farmers through digital market access</h4>
+      <h4>Objective: Empower farmers through digital market access. Conducted market analysis, designed digital solutions using WhatsApp Business API and C-Commerce, developed user journey, and cost-benefit analysis.</h4>
+      {/* <h4>Timeline: 4 month to launch</h4> */}
       
       <div className="slider-container">
         <Slider 
@@ -34,25 +35,25 @@ const DigitalizationForAgribusiness = () => {
           autoplaySpeed={settings.autoplaySpeed}
         >
           <div className="slide-content">
-            <h3>Project Overview</h3>
-            <img src={placeholderImg} alt="Digitalization for Agribusiness Demo" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>Platform Overview - Phase 1 (Early Adopter Stage)</h3>
+            <p>Objective: Enable direct ordering via WhatsApp to validate demand and streamline farmer‑to‑consumer sales.</p>
+            <img src={podang} alt="Digitalization for Agribusiness Demo" />
+            <strong className='responds2'>Responsibilities</strong>
+            <ul>
+              <li>Conducted market analysis and designed digital solutions using WhatsApp Business API and C-Commerce.</li>
+              <li>Developed user journey, performed cost-benefit analysis, and created an operational blueprint.</li>
+              <li>Proposed a centralized model for transactions and stakeholder engagement strategies.</li>
+            </ul>
           </div>
           <div className="slide-content">
-            <h3>Digital Solutions</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Platform Overview Phase 2 (Integration)</h3>
+            <img src={podang} alt="Digitalization for Agribusiness Demo" />
+            <p>Migrated to WhatsApp Business API and layered in a C‑Commerce engine. Orders, payments, and customer interactions moved to a unified backend. This fully digital workflow centralized inventory, automated order routing, and standardized customer engagement—providing clear operational control and richer data insights.</p>
           </div>
         </Slider>
       </div>
-
-      <ul>
-        <li>Conducted market analysis and designed digital solutions using WhatsApp Business API and C-Commerce.</li>
-        <li>Developed user journey, performed cost-benefit analysis, and created an operational blueprint.</li>
-        <li>Proposed a centralized model for transactions and stakeholder engagement strategies.</li>
-      </ul>
-      <p className="project-detail-note">*Detail lebih lanjut akan ditambahkan di sini.</p>
     </div>
   )
 }
 
-export default DigitalizationForAgribusiness 
+export default Digitalization 
