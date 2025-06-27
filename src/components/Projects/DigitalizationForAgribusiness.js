@@ -4,7 +4,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 // Import gambar jika ada, atau gunakan placeholder
 import './ProjectDetailPage.css'
-import podang from '../../images/digital.jpeg'
+import podang1 from '../../images/digital.jpeg'
+import podang2 from '../../images/podang.png'
 
 const Digitalization = () => {
   const settings = {
@@ -37,7 +38,7 @@ const Digitalization = () => {
           <div className="slide-content">
             <h3>Platform Overview - Phase 1 (Early Adopter Stage)</h3>
             <p>Objective: Enable direct ordering via WhatsApp to validate demand and streamline farmer‑to‑consumer sales.</p>
-            <img src={podang} alt="Digitalization for Agribusiness Demo" />
+            <img src={podang1} alt="Digitalization for Agribusiness Demo" />
             <strong className='responds2'>Responsibilities</strong>
             <ul>
               <li>Conducted market analysis and designed digital solutions using WhatsApp Business API and C-Commerce.</li>
@@ -47,7 +48,7 @@ const Digitalization = () => {
           </div>
           <div className="slide-content">
             <h3>Platform Overview Phase 2 (Integration)</h3>
-            <img src={podang} alt="Digitalization for Agribusiness Demo" />
+            <img src={podang2} alt="Digitalization for Agribusiness Demo" />
             <p>Migrated to WhatsApp Business API and layered in a C‑Commerce engine. Orders, payments, and customer interactions moved to a unified backend. This fully digital workflow centralized inventory, automated order routing, and standardized customer engagement—providing clear operational control and richer data insights.</p>
           </div>
         </Slider>

@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import marketImg from '../../images/market_analys.jpeg'
 import blue from '../../images/blueprint.jpeg'
-import beyondImg from '../../images/Nodejs.png'
+import beyondImg from '../../images/edu_overview.png'
 import './ProjectDetailPage.css'
 
 const AiForRecruitment = () => {
