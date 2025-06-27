@@ -51,12 +51,21 @@ const projects = [
 const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
-  'Microsoft Office',
-  'Data Analysis',
-  'SPSS',
-  'SQL',
-  'Python',
   
+  'Data Analysis',
+  'Stakeholder Engagement',
+  'Project Management',
+  'Product Strategy',
+  'Market Research and Analysis',
+  'Financial Feasibility & Projection'
+  
+]
+
+const tools = [
+  'Figma',
+  'Microsoft Office',
+  'Canva',
+  'Trello',
 ]
 
 const contact = {
@@ -64,4 +73,4 @@ const contact = {
   email: 'elseridanababan@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, projects, skills, tools, contact }
